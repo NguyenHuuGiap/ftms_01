@@ -1,0 +1,293 @@
+2017-02-19 09:16:51[WARN] user: judoda09
+/en/admin/courses/3
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:16:54[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:17:16[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:17:24[WARN] user: judoda09
+/en/admin/courses/1/assign_trainees
+N+1 Query detected
+  CourseSubject => [:subject]
+  Add to your finder: :includes => [:subject]
+N+1 Query method call stack
+  /home/judoda09/workspace/ftms/app/models/concerns/init_user_subject.rb:7:in `block in create_user_subjects'
+  /home/judoda09/workspace/ftms/app/models/concerns/init_user_subject.rb:3:in `each'
+  /home/judoda09/workspace/ftms/app/models/concerns/init_user_subject.rb:3:in `create_user_subjects'
+  /home/judoda09/workspace/ftms/app/models/user_course.rb:33:in `create_user_subjects_when_assign_new_user'
+  /home/judoda09/workspace/ftms/app/controllers/admin/assign_trainees_controller.rb:13:in `update'
+
+/home/judoda09/workspace/ftms/app/models/concerns/init_user_subject.rb:7:in `block in create_user_subjects'
+/home/judoda09/workspace/ftms/app/models/concerns/init_user_subject.rb:3:in `each'
+/home/judoda09/workspace/ftms/app/models/concerns/init_user_subject.rb:3:in `create_user_subjects'
+/home/judoda09/workspace/ftms/app/models/user_course.rb:33:in `create_user_subjects_when_assign_new_user'
+/home/judoda09/workspace/ftms/app/controllers/admin/assign_trainees_controller.rb:13:in `update'2017-02-19 09:17:24[WARN] user: judoda09
+/en/admin/courses/1/assign_trainees
+Unused Eager Loading detected
+  Course => [:user_courses]
+  Remove from your finder: :includes => [:user_courses]
+
+
+2017-02-19 09:17:24[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:17:38[WARN] user: judoda09
+/en/admin/course_subjects/1/user_subjects/1
+Unused Eager Loading detected
+  CourseSubject => [:tasks]
+  Remove from your finder: :includes => [:tasks]
+
+
+2017-02-19 09:17:38[WARN] user: judoda09
+/en/admin/course_subjects/1/user_subjects/1
+Unused Eager Loading detected
+  UserSubject => [:user_tasks]
+  Remove from your finder: :includes => [:user_tasks]
+
+
+2017-02-19 09:17:38[WARN] user: judoda09
+/en/admin/course_subjects/1/user_subjects/1
+Unused Eager Loading detected
+  UserTask => [:user]
+  Remove from your finder: :includes => [:user]
+
+
+2017-02-19 09:17:43[WARN] user: judoda09
+/en/courses
+Unused Eager Loading detected
+  Notification => [:user]
+  Remove from your finder: :includes => [:user]
+
+
+2017-02-19 09:17:47[WARN] user: judoda09
+/en/user_courses/1/subjects/1
+Unused Eager Loading detected
+  Notification => [:user]
+  Remove from your finder: :includes => [:user]
+
+
+2017-02-19 09:38:44[WARN] user: judoda09
+/en/user_courses/1/subjects/1
+Unused Eager Loading detected
+  Notification => [:user]
+  Remove from your finder: :includes => [:user]
+
+
+2017-02-19 09:41:11[WARN] user: judoda09
+/en/admin/courses
+N+1 Query detected
+  Subject => [:task_masters]
+  Add to your finder: :includes => [:task_masters]
+N+1 Query method call stack
+  /home/judoda09/workspace/ftms/app/models/course_subject.rb:53:in `create_tasks'
+  /home/judoda09/workspace/ftms/app/controllers/admin/courses_controller.rb:30:in `create'
+
+/home/judoda09/workspace/ftms/app/models/course_subject.rb:53:in `create_tasks'
+/home/judoda09/workspace/ftms/app/controllers/admin/courses_controller.rb:30:in `create'2017-02-19 09:41:12[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:42:09[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:42:25[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:43:09[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:44:15[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:44:43[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:44:59[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:45:09[WARN] user: judoda09
+/en/admin/courses/4
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:46:12[WARN] user: judoda09
+/en/admin/courses/2
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:46:22[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:47:02[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:48:22[WARN] user: judoda09
+/en/admin/courses/2
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:48:38[WARN] user: judoda09
+/en/admin/courses/2
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:48:50[WARN] user: judoda09
+/en/admin/courses/2
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:49:25[WARN] user: judoda09
+/en/user_courses/1
+Unused Eager Loading detected
+  Notification => [:user]
+  Remove from your finder: :includes => [:user]
+
+
+2017-02-19 09:49:52[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:50:29[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:50:39[WARN] user: judoda09
+/en/admin/course_subjects/2/user_subjects/2
+Unused Eager Loading detected
+  CourseSubject => [:tasks]
+  Remove from your finder: :includes => [:tasks]
+
+
+2017-02-19 09:50:39[WARN] user: judoda09
+/en/admin/course_subjects/2/user_subjects/2
+Unused Eager Loading detected
+  UserSubject => [:user_tasks]
+  Remove from your finder: :includes => [:user_tasks]
+
+
+2017-02-19 09:50:39[WARN] user: judoda09
+/en/admin/course_subjects/2/user_subjects/2
+Unused Eager Loading detected
+  UserTask => [:user]
+  Remove from your finder: :includes => [:user]
+
+
+2017-02-19 09:51:00[WARN] user: judoda09
+/en/admin/course_subjects/2/user_subjects/2?status=finish
+Unused Eager Loading detected
+  CourseSubject => [:tasks]
+  Remove from your finder: :includes => [:tasks]
+
+
+2017-02-19 09:51:00[WARN] user: judoda09
+/en/admin/course_subjects/2/user_subjects/2?status=finish
+Unused Eager Loading detected
+  UserSubject => [:user_tasks]
+  Remove from your finder: :includes => [:user_tasks]
+
+
+2017-02-19 09:51:00[WARN] user: judoda09
+/en/admin/course_subjects/2/user_subjects/2?status=finish
+Unused Eager Loading detected
+  UserTask => [:user]
+  Remove from your finder: :includes => [:user]
+
+
+2017-02-19 09:51:06[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:51:33[WARN] user: judoda09
+/en/admin/courses/1
+Need Counter Cache
+  CourseSubject => [:user_subjects]
+
+2017-02-19 09:51:57[WARN] user: judoda09
+/en/user_courses/1/subjects/1
+N+1 Query detected
+  UserSubject => [:course_subject]
+  Add to your finder: :includes => [:course_subject]
+N+1 Query method call stack
+  /home/judoda09/workspace/ftms/app/helpers/notification_helper.rb:40:in `notification_link'
+  /home/judoda09/workspace/ftms/app/views/shared/_notification.html.erb:2:in `_app_views_shared__notification_html_erb___2526135840755853074_69968626805000'
+  /home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:46:in `block in _app_views_layouts__user_header_html_erb__3826112002797441549_69968628728420'
+  /home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:45:in `_app_views_layouts__user_header_html_erb__3826112002797441549_69968628728420'
+  /home/judoda09/workspace/ftms/app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___110167984192467214_38332480'
+
+/home/judoda09/workspace/ftms/app/helpers/notification_helper.rb:40:in `notification_link'
+/home/judoda09/workspace/ftms/app/views/shared/_notification.html.erb:2:in `_app_views_shared__notification_html_erb___2526135840755853074_69968626805000'
+/home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:46:in `block in _app_views_layouts__user_header_html_erb__3826112002797441549_69968628728420'
+/home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:45:in `_app_views_layouts__user_header_html_erb__3826112002797441549_69968628728420'
+/home/judoda09/workspace/ftms/app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___110167984192467214_38332480'2017-02-19 09:52:38[WARN] user: judoda09
+/en/user_courses/1/subjects/2
+N+1 Query detected
+  UserSubject => [:course_subject]
+  Add to your finder: :includes => [:course_subject]
+N+1 Query method call stack
+  /home/judoda09/workspace/ftms/app/helpers/notification_helper.rb:40:in `notification_link'
+  /home/judoda09/workspace/ftms/app/views/shared/_notification.html.erb:2:in `_app_views_shared__notification_html_erb___2526135840755853074_69968627523720'
+  /home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:46:in `block in _app_views_layouts__user_header_html_erb__3826112002797441549_69968615778340'
+  /home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:45:in `_app_views_layouts__user_header_html_erb__3826112002797441549_69968615778340'
+  /home/judoda09/workspace/ftms/app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___110167984192467214_69968887491200'
+
+/home/judoda09/workspace/ftms/app/helpers/notification_helper.rb:40:in `notification_link'
+/home/judoda09/workspace/ftms/app/views/shared/_notification.html.erb:2:in `_app_views_shared__notification_html_erb___2526135840755853074_69968627523720'
+/home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:46:in `block in _app_views_layouts__user_header_html_erb__3826112002797441549_69968615778340'
+/home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:45:in `_app_views_layouts__user_header_html_erb__3826112002797441549_69968615778340'
+/home/judoda09/workspace/ftms/app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___110167984192467214_69968887491200'2017-02-19 09:52:52[WARN] user: judoda09
+/en/user_courses/1/subjects/1
+N+1 Query detected
+  UserSubject => [:course_subject]
+  Add to your finder: :includes => [:course_subject]
+N+1 Query method call stack
+  /home/judoda09/workspace/ftms/app/helpers/notification_helper.rb:40:in `notification_link'
+  /home/judoda09/workspace/ftms/app/views/shared/_notification.html.erb:2:in `_app_views_shared__notification_html_erb___2526135840755853074_63169680'
+  /home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:46:in `block in _app_views_layouts__user_header_html_erb__3826112002797441549_64391060'
+  /home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:45:in `_app_views_layouts__user_header_html_erb__3826112002797441549_64391060'
+  /home/judoda09/workspace/ftms/app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___110167984192467214_69968619789220'
+
+/home/judoda09/workspace/ftms/app/helpers/notification_helper.rb:40:in `notification_link'
+/home/judoda09/workspace/ftms/app/views/shared/_notification.html.erb:2:in `_app_views_shared__notification_html_erb___2526135840755853074_63169680'
+/home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:46:in `block in _app_views_layouts__user_header_html_erb__3826112002797441549_64391060'
+/home/judoda09/workspace/ftms/app/views/layouts/_user_header.html.erb:45:in `_app_views_layouts__user_header_html_erb__3826112002797441549_64391060'
+/home/judoda09/workspace/ftms/app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___110167984192467214_69968619789220'2017-02-19 09:59:24[WARN] user: judoda09
+/messages/new?id=13&type=Conversation
+N+1 Query detected
+  Message => [:user]
+  Add to your finder: :includes => [:user]
+N+1 Query method call stack
+  /home/judoda09/workspace/ftms/app/views/messages/_message.html.erb:5:in `_app_views_messages__message_html_erb__4520206159905513372_69968889599520'
+  /home/judoda09/workspace/ftms/app/views/messages/new.js.erb:4:in `_app_views_messages_new_js_erb__3176168365526842608_69968890312460'
+
+/home/judoda09/workspace/ftms/app/views/messages/_message.html.erb:5:in `_app_views_messages__message_html_erb__4520206159905513372_69968889599520'
+/home/judoda09/workspace/ftms/app/views/messages/new.js.erb:4:in `_app_views_messages_new_js_erb__3176168365526842608_69968890312460'
